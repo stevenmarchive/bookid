@@ -5,7 +5,6 @@ namespace App\Controller\Admin;
 use App\Entity\Adherent;
 use App\Entity\Autheur;
 use App\Entity\Editeur;
-use App\Entity\Emprunt;
 use App\Entity\Exemplaire;
 use App\Entity\Genre;
 use App\Entity\Livre;
@@ -58,6 +57,5 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Livre', 'fas fa-book', Livre::class);
         yield MenuItem::linkToCrud('Exemplaire', 'fas fa-list', Exemplaire::class);
         yield MenuItem::linkToCrud('Adherent', 'fas fa-list', Adherent::class);
-        yield MenuItem::linkToCrud('Emprunt', 'fas fa-list', Emprunt::class);
     }
 }

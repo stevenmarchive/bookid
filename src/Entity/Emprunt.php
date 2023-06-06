@@ -22,10 +22,10 @@ class Emprunt
     #[ORM\JoinColumn(nullable: false)]
     private ?Exemplaire $exemplaire = null;
 
-    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
+    #[ORM\Column(type: DateTimeType::class)]
     private ?\DateTimeInterface $date_emprunt = null;
 
-    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
+    #[ORM\Column(type: DateTimeType::class, nullable: true)]
     private ?\DateTimeInterface $date_retour = null;
 
     #[ORM\Column]
